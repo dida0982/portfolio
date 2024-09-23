@@ -1,14 +1,13 @@
 const imagem = document.querySelector("img");
 
-imagem.onclick = function() {
+imagem.onclick = function () {
   const mySrc = imagem.getAttribute("src");
-  if (mySrc === "../imgs/eu1.png") {
-    imagem.setAttribute("src", "../imgs/eu2.png");
+  if (mySrc === "./imgs/eu1.png") {
+    imagem.setAttribute("src", "./imgs/eu2.png");
   } else {
-    imagem.setAttribute("src", "../imgs/eu1.png");
+    imagem.setAttribute("src", "./imgs/eu1.png");
   }
 };
-
 
 let myButton = document.querySelector("button");
 let myh3 = document.querySelector("h3");
