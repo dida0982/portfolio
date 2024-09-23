@@ -15,7 +15,7 @@ body {
   /* border: 5px solid rgb(255, 255, 255); */
 }
 
-h1 {
+h1,h3 {
   /* margin: 0; */
   padding: 40px 0 20px 0;
   /* text-shadow: 3px 3px 1px black; */
@@ -51,6 +51,7 @@ strong {
 }
 
 a {
+  text-decoration: none;
   text-align: left;
   color: rgb(255, 255, 255);
   font-weight: 300;
