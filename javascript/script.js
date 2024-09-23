@@ -8,3 +8,24 @@ imagem.onclick = function() {
     imagem.setAttribute("src", "../imgs/eu1.png");
   }
 };
+
+
+let myButton = document.querySelector("button");
+let myh3 = document.querySelector("h3");
+
+function definirNome() {
+  const Nome = prompt("Por favor, digite o seu nome");
+  localStorage.setItem("name", Nome);
+  myh3.textContent = `Obrigado pela visita, ${Nome}.`;
+}
+
+if (!localStorage.getItem("name")) {
+  definirNome();
+} else {
+  const storedName = localStorage.getItem("name");
+  myh3.textContent = `Clique no botão abaixo, ${storedName}.`;
+}
+
+myButton.onclick = () => {
+  definirNome();
+};
