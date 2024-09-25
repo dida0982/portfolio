@@ -1,4 +1,4 @@
-const imagem = document.querySelector("img");
+const imagem = document.querySelector(".img_home");
 
 imagem.onclick = function () {
   const mySrc = imagem.getAttribute("src");
@@ -9,7 +9,7 @@ imagem.onclick = function () {
   }
 };
 
-let myButton = document.querySelector("button");
+let myButton = document.querySelector(".end_button");
 let myh3 = document.querySelector("h3");
 
 function definirNome() {
