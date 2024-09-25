@@ -7,6 +7,42 @@ html {
   background-color: black;
 }
 
+/* Estilos gerais */
+header {
+  display: flex; /* Usando Flexbox para organizar os elementos */
+  justify-content: flex-end; /* Alinhando todos os itens à direita */
+  align-items: center; /* Centralizando verticalmente os itens */
+  padding: 5px;
+  background-color: #000000; /* Cor de fundo para o header (opcional) */
+}
+
+/* Estilo da imagem */
+.logo {
+  margin-left: 50px; /* Espaçamento entre a logo e o botão */
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Estilo do botão */
+.button_login {
+  background-color: #404040; /* Cor de fundo do botão */
+  border: none;
+  color: white;
+  padding: 10px 20px; /*tamanho do button*/
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button_login a {
+  text-decoration: none;
+  color: white; /* O link dentro do botão ficará branco */
+}
+
+.button_login:hover {
+  background-color: #45a049; /* Efeito de hover no botão */
+}
+
 body {
   /* width: 800px; */
   margin: auto auto;
@@ -15,8 +51,7 @@ body {
   /* border: 5px solid rgb(255, 255, 255); */
 }
 
-h1,
-h3 {
+h1 {
   /* margin: 0; */
   padding: 40px 0 20px 0;
   /* text-shadow: 3px 3px 1px black; */
@@ -25,14 +60,21 @@ h3 {
   font-weight: 400;
 }
 
-h2 {
+h2{
   padding: 20px 0 0 0;
   text-align: center;
   color: rgb(255, 255, 255);
   font-weight: 400;
 }
 
-img {
+h3{
+  padding: 20px 0 0 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+.img_home {
   width: 500px;
   height: 500px;
   display: block;
@@ -44,6 +86,31 @@ p {
   color: rgb(255, 255, 255);
   font-weight: 300;
 }
+
+/**/
+.container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  /*align-items: center; /* Centraliza verticalmente */
+  /*height: 100vh; /* Faz o contêiner ocupar a altura total da viewport */
+}
+
+.end_button {
+  background-color: #404040; /* Cor de fundo do botão */
+  border: none;
+  color: white;
+  padding: 10px 20px; /*tamanho do button*/
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.end_button:hover {
+  background-color: #45a049; /* Efeito de hover no botão */
+}
+
+/**/
 
 strong {
   color: rgb(255, 255, 255);
@@ -57,8 +124,20 @@ a {
   font-weight: 300;
 }
 
+
 ul,
 li {
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+
+dt {
+  padding: 20px 0 0 0;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+dd {
   color: rgb(255, 255, 255);
   font-weight: 300;
 }
