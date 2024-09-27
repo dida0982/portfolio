@@ -107,8 +107,8 @@ h3{
 }
 
 .img_home, .imgs_page_login {
-  width: 500px;
-  height: 500px;
+  max-width: 100%;
+  height: auto;
   display: block;
   margin: 0 auto;
 }
@@ -182,4 +182,14 @@ dd {
 .video_youtube, .maps {
   display: block;
   margin: 0 auto;
+  /* max-width: 100%; */
+  /* height: auto; */
+}
+
+@media (max-width: 600px) {  /* Para telas menores que 768px */
+  .video_youtube, .maps {
+    width: 100%;  /* A imagem ocupa a largura total da tela */
+    height: auto;
+  }
+
 }
