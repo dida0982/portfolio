@@ -1,145 +1,319 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" 
+          href="../css/style.css">
+
     <title>Curiosidades</title>
   </head>
 
-  
   <body>
     <header>
-      <button class="button_login"> <a  href="../index.html"><strong>Home</strong></a></button>
-  
-      <img class="logo" src="../imgs/logo2.png" alt="">
-  
+      <button
+        class="button_login"
+        onclick="window.location.href='../index.html';">
+        <strong>Home</strong>
+      </button>
+
+      <img class="logo" 
+           src="../imgs/logo2.png" 
+           alt="logo guitech">
     </header>
 
-    <nav>
+    <!-- <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Our team</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      
-      <!-- Um formulário de pesquisa é uma outra maneira não linear comum de navegar por um site. -->
-      
-      <form>
-        <input type="search" name="q" placeholder="Search query" />
-        <input type="submit" value="Go!" />
-      </form>
-    </nav>
-    
-    <!-- <dd>Login</dd><input type="text" />
-    <dd>Senha</dd><input type="text" disabled /> -->
-    
-    <article>
-    <dl>
-      <h1 class="titulo_page2">
-        🔍 Como a Web Funciona – Desvendando o Mundo dos Bastidores Online! 🌐
-      </h1>
 
-      <dd>
+      <!-- Um formulário de pesquisa é uma outra maneira não linear comum de navegar por um site. -->
+
+      <!-- <form>
+        <input type="search" 
+               name="q" 
+               placeholder="Search query">
+
+        <input type="submit" 
+               value="Go!">
+      </form>
+    </nav> --> 
+
+    <!-- <p>Login</p><input type="text" />
+    <p>Senha</p><input type="text" disabled /> -->
+
+    <div class="video-background">
+      <video autoplay muted loop playsinline>
+        <source src="../imgs/galaxy.mp4" type="video/mp4">
+      </video>
+      <audio autoplay >
+        <source src="../imgs/audio1.mp3" type="audio/mp3">
+      </audio>
+      <div class="content">
+        <h1>Conceitos Essenciais de Programação</h1>
+          <p>Cada linha de código é uma oportunidade de criar algo incrível. Sou movido pela curiosidade e pela vontade de sempre aprender mais. Programar é transformar o impossível em realidade, e estou sempre pronto para o próximo desafio. #PrograçãoÉTodoDia</p>
+        
+      </div>
+    </div>
+
+    <h1 class="titulo_page2">
+      🔍 Como a Web Funciona – Desvendando o Mundo dos Bastidores Online! 🌐
+    </h1>
+
+    <img class="imgs_page_login" src="../imgs/1.avif" 
+        alt=" Como a Web Funciona – Desvendando o Mundo dos Bastidores Online!">
+
+    
+
+      <h2>🕵️‍♂️ O que acontece ao digitar uma URL</h2>
+
+      <p>
         Já parou para pensar o que acontece quando você digita uma URL no
         navegador e, como mágica, aparece uma página brilhante e cheia de vida
         na sua tela? 🌟 Bom, vou te contar esse segredo de uma maneira leve e
         divertida. 🕵️‍♂️
-      </dd>
+      </p>
 
-      <dt>🚀 Clientes e Servidores</dt>
-      <dd>
+      <h2>🚀 Clientes e Servidores</h2>
+
+      <p>
         Imagina que a web é uma estrada. No começo da estrada (em casa) está
         <span class="highlight">você</span>, o cliente. No outro extremo, está o
         servidor, como se fosse uma loja com o que você quer comprar (ou
         acessar). Quando você pede uma página, é como pedir um produto na loja.
         O servidor envia a página para você – é só esperar a entrega! 📦
-      </dd>
+      </p>
 
-      <dt>🛠️ Por trás das Cortinas</dt>
-      <dd>
+      <h2>🛠️ Por trás das Cortinas</h2>
+      <p>
         A web não é só cliente e servidor – existem várias outras engrenagens!
         Olha só:
-      </dd>
+      </p>
 
-      <ul>
-        <li>
-          Conexão de Internet: A estrada que te leva da sua casa até a loja. 🛣️
-        </li>
-        <li>
-          TCP/IP: O sistema de transporte que leva os dados, como se fosse seu
-          carro ou bicicleta para chegar na loja. 🚗🚴‍♂️
-        </li>
-        <li>
-          DNS: O catálogo de endereços da web. Digita "mozilla.org"? O DNS
-          transforma isso em números que o navegador entende. 🗺️
-        </li>
-        <li>
-          HTTP: A linguagem do pedido. É como se você falasse para o servidor:
-          "Me manda esse site aí, por favor?" 💬
-        </li>
-        <li>
-          Arquivos Componentes: O que vem na "caixa" do site. São os arquivos de
-          código (HTML, CSS, JavaScript) e recursos (imagens, vídeos, PDFs) que
-          fazem o site funcionar. 📂
-        </li>
-      </ul>
-
-      <dt>🔄 E como acontece a mágica?</dt>
-      <ul>
-        <li>
-          Você digita o endereço do site (ex: "exemplo.com") no navegador. 🖥️
-        </li>
-        <li>O navegador pergunta ao DNS: "Ei, onde está esse site?" 🌍</li>
-        <li>
-          O DNS encontra o endereço e o navegador pede ao servidor: "Me manda os
-          arquivos do site!" 📬
-        </li>
-        <li>
-          O servidor responde com "200 OK" (tradução: "Claro, aqui estão!") e
-          manda os arquivos em pacotinhos de dados. 📦📦
-        </li>
-        <li>O navegador monta tudo e, voilà, o site aparece na sua tela! 🎉</li>
-      </ul>
-
-      <dt>💡 Pacotes de dados?</dt>
-      <dd>
+     
+        <ul>
+          <li>
+            Conexão de Internet: A estrada que te leva da sua casa até a loja.🛣️
+          </li>
+          <li>
+            TCP/IP: O sistema de transporte que leva os dados, como se fosse seu
+            carro ou bicicleta para chegar na loja. 🚗🚴‍♂️
+          </li>
+          <li>
+            DNS: O catálogo de endereços da web. Digita "mozilla.org"? O DNS
+            transforma isso em números que o navegador entende. 🗺️
+          </li>
+          <li>
+            HTTP: A linguagem do pedido. É como se você falasse para o servidor:
+            "Me manda esse site aí, por favor?" 💬
+          </li>
+          <li>
+            Arquivos Componentes: O que vem na "caixa" do site. São os arquivos
+            de código (HTML, CSS, JavaScript) e recursos (imagens, vídeos, PDFs)
+            que fazem o site funcionar. 📂
+          </li>
+        </ul>
+      
+    
+    
+      <h2>🔄 E como acontece a mágica?</h2>
+      <p>
+        <ul>
+          <li>
+            Você digita o endereço do site (ex: "exemplo.com") no navegador. 🖥️
+          </li>
+          <li>O navegador pergunta ao DNS: "Ei, onde está esse site?" 🌍</li>
+          <li>
+            O DNS encontra o endereço e o navegador pede ao servidor: "Me manda
+            os arquivos do site!" 📬
+          </li>
+          <li>
+            O servidor responde com "200 OK" (tradução: "Claro, aqui estão!") e
+            manda os arquivos em pacotinhos de dados. 📦📦
+          </li>
+          <li>
+            O navegador monta tudo e, voilà, o site aparece na sua tela! 🎉
+          </li>
+        </ul>
+      </p>
+    
+    
+      <h2>💡 Pacotes de dados?</h2>
+      <p>
         Sim, a web envia os dados em pedacinhos, como um quebra-cabeça que o
         navegador junta para formar o site completo. Isso permite que vários
         usuários acessem o site ao mesmo tempo, sem sobrecarregar o servidor. 😎
-      </dd>
+      </p>
 
-      <dd>
+      <p>
         Quer saber mais sobre como a internet que você usa todos os dias
         funciona? Comente abaixo e compartilhe! 🌐✨
-      </dd>
-    </dl>
+      </p>
+    
 
-      <h1>🎯 Seções básicas de um site bem estruturado 🎯</h1-->
+    <h1>🎯 Seções básicas de um site bem estruturado 🎯</h1>
 
-      <p>Ao criar uma página da web, é importante seguir uma estrutura padrão para garantir que os usuários tenham uma experiência consistente e fácil de navegar. Aqui estão os componentes principais que você deve considerar:</p>
+    <img class="imgs_page_login" src="../imgs/2.jpg" alt="">
 
-      <ul>
-          <li><strong>💡 Cabeçalho (header):</strong> Geralmente, é a faixa na parte superior, onde ficam o logotipo e o título principal. É aqui que as informações consistentes do site são exibidas de página para página.</li>
-          
-          <li><strong>🗺️ Barra de navegação (nav):</strong> Conjunto de links para as principais seções do site. Manter a navegação clara e consistente é essencial para evitar a frustração do usuário.</li>
+    <p>
+      Ao criar uma página da web, é importante seguir uma estrutura padrão para
+      garantir que os usuários tenham uma experiência consistente e fácil de
+      navegar. Aqui estão os componentes principais que você deve considerar:
+    </p>
 
-          <li><strong>📄 Conteúdo principal (main):</strong> A área central da página, que contém o conteúdo exclusivo de cada página, como artigos, vídeos ou mapas. Essa é a parte que mais varia de uma página para outra.</li>
+    <ul>
+      <li>
+        <strong>💡 Cabeçalho (header):</strong> Geralmente, é a faixa na parte
+        superior, onde ficam o logotipo e o título principal. É aqui que as
+        informações consistentes do site são exibidas de página para página.
+      </li>
 
-          <li><strong>🔗 Barra lateral (sidebar):</strong> Elementos periféricos como links, anúncios e informações contextuais ao conteúdo principal.</li>
+      <li>
+        <strong>🗺️ Barra de navegação (nav):</strong> Conjunto de links para as
+        principais seções do site. Manter a navegação clara e consistente é
+        essencial para evitar a frustração do usuário.
+      </li>
 
-          <li><strong>🖋️ Rodapé (footer):</strong> Local para informações secundárias, como direitos autorais ou informações de contato. Também pode ser útil para melhorar o SEO do site.</li>
-      </ul>
+      <li>
+        <strong>📄 Conteúdo principal (main):</strong> A área central da página,
+        que contém o conteúdo exclusivo de cada página, como artigos, vídeos ou
+        mapas. Essa é a parte que mais varia de uma página para outra.
+      </li>
 
-      <p>💻 Ao estruturar um site, essas seções ajudam a criar uma experiência de navegação mais eficiente e organizada para os visitantes.</p>
+      <li>
+        <strong>🔗 Barra lateral (sidebar):</strong> Elementos periféricos como
+        links, anúncios e informações contextuais ao conteúdo principal.
+      </li>
 
-      <p>#webdevelopment #uxdesign #frontend #webstructure #programmingtips</p>
-  </article>
+      <li>
+        <strong>🖋️ Rodapé (footer):</strong> Local para informações secundárias,
+        como direitos autorais ou informações de contato. Também pode ser útil
+        para melhorar o SEO do site.
+      </li>
+    </ul>
+
+    <p>
+      💻 Ao estruturar um site, essas seções ajudam a criar uma experiência de
+      navegação mais eficiente e organizada para os visitantes.
+    </p>
+
+    <h1>🎯 Principais Elementos de Layout em HTML 🎯</h1>
+
+    <img class="imgs_page_login" src="../imgs/3.webp" alt="">
+
+    
+      <h2></h2>
+      <p>
+        Se você está começando no desenvolvimento web, é importante entender
+        como usar os elementos de seção do HTML de forma eficiente. Aqui estão
+        alguns dos principais que você deve conhecer:
+      </p>
+
+      <br>
+<ul>
+
+  <li>
+    💡 <strong><code>&lt;main&gt;</code>:</strong> Usado para o conteúdo
+    principal e único de uma página. Deve aparecer apenas uma vez por página
+        e ser colocado diretamente dentro do <code>&lt;body&gt;</code>.
+      </li>
+
+      <li>
+        📝 <strong><code>&lt;article&gt;</code></strong
+        >: Ideal para blocos de conteúdo que fazem sentido sozinhos, como uma
+        postagem de blog. Ele pode existir independentemente do restante da
+        página.
+      </li>
+
+      <li>
+        📊 <strong><code>&lt;section&gt;</code></strong
+        >: Semelhante ao <strong><code>&lt;article&gt;</code></strong
+          >, mas mais adequado para agrupar funcionalidades únicas, como um
+          conjunto de manchetes ou um mapa. Dica: sempre comece uma
+          <strong><code>&lt;section&gt;</code></strong> com um título.
+        </li>
+        
+      <li>
+        📚 <strong><code>&lt;aside&gt;</code></strong
+        >: Utilizado para conteúdo complementar, como biografias de autores,
+        glossários ou links relacionados. Ele não está diretamente relacionado
+        ao conteúdo principal, mas oferece suporte.
+      </li>
+
+      <li>
+        🔝 <strong><code>&lt;header&gt;</code></strong
+        >: Representa um grupo de conteúdo introdutório. Se for filho de
+        <strong><code>&lt;body&gt;</code></strong
+          >, é o cabeçalho global. Se for filho de
+          <strong><code>&lt;article&gt;</code></strong> ou
+        <strong><code>&lt;section&gt;</code></strong
+          >, ele é específico para aquela seção.
+        </li>
+        
+      <li>
+        🧭 <strong><code>&lt;nav&gt;</code></strong
+          >: Contém a navegação principal da página. Links secundários não devem
+        ir aqui.
+      </li>
+      
+      <li>
+        🔚 <strong><code>&lt;footer&gt;</code></strong
+          >: Representa o conteúdo final da página, como direitos autorais ou
+        informações de contato.
+      </li>
+    </ul>
+      <br>
+      <p>
+        Esses elementos ajudam a manter seu código organizado e fácil de
+        entender, além de melhorar a acessibilidade e a experiência do usuário.
+      </p>
+
+      <h2>🧐💡Você não precisa baixar vídeos do YouTube para colocá-los no seu site ou blog! Basta seguir esses passos simples: 💡🧐</h2>
+      <br>
+<ul>
+  <li>1️⃣ Vá até o vídeo que você quer compartilhar.</li>
+  <li>2️⃣ Clique em Compartilhar abaixo do vídeo.</li>
+  <li>3️⃣ Selecione a opção Incorporar e copie o código &lt;iframe&gt;.</li>
+  <li>4️⃣ Cole esse código na sua página... e pronto! 🎉</li>
+</ul>
+
+  <p>
+    Agora o vídeo está incorporado no seu site ou blog sem precisar baixar nada!
+    Super simples e prático, né? 😎
+  </p>
+
+<iframe class="video_youtube" width="560" height="315" src="https://www.youtube.com/embed/HIvqw74pCFc?si=Q7DMLuaS5vfM9Cax" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+<h2>💡 Dica Rápida: Incorpore Mapas do Google diretamente no seu site! 🌍</h2>
+
+<p>
+  Sabia que você pode adicionar um <a href="https://www.google.com/maps/">Google Maps</a> diretamente no seu site ou blog sem precisar de plugins complicados? É super simples! Basta seguir esses passos:
+</p>
+
+<ul>
+  <li>1️⃣ Vá para o Google Maps e encontre o local que você quer compartilhar.</li>
+  <li>2️⃣ Clique no menu de três linhas no canto superior esquerdo.</li>
+  <li>3️⃣ Selecione Compartilhar ou incorporar mapa.</li>
+  <li>4️⃣ Escolha Incorporar mapa e copie o código &lt;iframe&gt;.</li>
+  <li>5️⃣ Cole esse código no seu site... e voilà! 🎯</li>
+</ul>
+
+<p>
+  Agora, seu mapa está integrado no site, oferecendo uma visualização interativa para seus usuários! 🚀
+</p>
+
+<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4633.2782509571125!2d-47.876013324048024!3d-15.826423723746258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a24dadcd2f683%3A0x113d72b3f829d11d!2sPont%C3%A3o%20do%20Lago%20Sul!5e1!3m2!1sen!2sbr!4v1727387015890!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
 
     <footer>
       <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
-
   </body>
 </html>
