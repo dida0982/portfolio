@@ -93,6 +93,14 @@ h1 {
 h2{
   font-size: 24px;
   padding: 20px 0 0 0;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+.subtitulos_centro{
+  font-size: 24px;
+  padding: 20px 0 0 0;
   text-align: center;
   color: rgb(255, 255, 255);
   font-weight: 400;
@@ -114,6 +122,13 @@ h3{
 }
 
 p {
+  font-size: 20px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+
+.paragrafos_centro{
   font-size: 20px;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -155,6 +170,11 @@ a {
   text-align: left;
   color: rgb(255, 255, 255);
   font-weight: 300;
+}
+
+a:hover {
+  color:#ce1d1d; /* Cor do link quando o mouse passar por cima */
+  /* text-decoration: underline; Adiciona o sublinhado ao passar o mouse, opcional */
 }
 
 
