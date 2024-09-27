@@ -1,6 +1,5 @@
 html {
   font-family: "Open Sans", system-ui;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
@@ -51,8 +50,39 @@ body {
   /* border: 5px solid rgb(255, 255, 255); */
 }
 
+/* Estilo para o vídeo de fundo */
+.video-background {
+  position: relative;
+  /* height: 100vh; O vídeo ocupa 100% da altura da tela  */
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* Ajusta o vídeo para cobrir toda a área */
+}
+
+/* Estilo para o conteúdo sobreposto */
+.content {
+  position: relative;
+  z-index: 1;
+  color: white; /* A cor do texto sobre o vídeo */
+  text-align: center;
+  padding-top: 20vh;
+}
+
+
 h1 {
   /* margin: 0; */
+  font-size: 32px;
   padding: 40px 0 20px 0;
   /* text-shadow: 3px 3px 1px black; */
   text-align: center;
@@ -61,6 +91,7 @@ h1 {
 }
 
 h2{
+  font-size: 24px;
   padding: 20px 0 0 0;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -68,13 +99,14 @@ h2{
 }
 
 h3{
+  font-size: 20px;
   padding: 20px 0 0 0;
   text-align: center;
   color: rgb(255, 255, 255);
   font-weight: 400;
 }
 
-.img_home {
+.img_home, .imgs_page_login {
   width: 500px;
   height: 500px;
   display: block;
@@ -82,6 +114,7 @@ h3{
 }
 
 p {
+  font-size: 20px;
   text-align: center;
   color: rgb(255, 255, 255);
   font-weight: 300;
@@ -127,17 +160,26 @@ a {
 
 ul,
 li {
+  font-size: 16px;
   color: rgb(255, 255, 255);
   font-weight: 300;
 }
 
 dt {
+  font-size: 24px;
   padding: 20px 0 0 0;
   color: rgb(255, 255, 255);
   font-weight: 400;
 }
 
 dd {
+  font-size: 16px;
   color: rgb(255, 255, 255);
   font-weight: 300;
+}
+
+
+.video_youtube, .maps {
+  display: block;
+  margin: 0 auto;
 }
